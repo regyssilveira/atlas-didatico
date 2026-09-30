@@ -1,0 +1,4 @@
+ordem_manutencao_id,maquina_id,tipo,data_planejada,inicio_real,fim_real,status
+OM-001,MAQ-012,preventiva,2026-02-15,2026-03-03,2026-03-03,adiada
+OM-002,MAQ-012,preventiva,2026-04-08,2026-04-27,2026-04-27,adiada
+OM-003,MAQ-012,corretiva,2026-10-17,2026-10-17,2026-10-18,concluida

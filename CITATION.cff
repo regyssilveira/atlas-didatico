@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Se você utilizar o Atlas Didático, cite este repositório e o livro associado."
+title: "Atlas Didático"
+type: dataset
+version: "1.0"
+date-released: 2026-09-30
+authors:
+  - family-names: "Silveira"
+    given-names: "Régys Borges da"
+repository-code: "https://github.com/regyssilveira/atlas-didatico"
+url: "https://livros.regys.com.br/dos-dados-a-decisao"
+license: Apache-2.0

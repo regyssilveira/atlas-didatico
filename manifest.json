@@ -1,0 +1,63 @@
+{
+  "dataset": "Atlas",
+  "version": "1.0",
+  "seed": 20260930,
+  "files": {
+    "apontamentos_producao.csv": {
+      "rows": 480,
+      "sha256": "49a3675693ed57ebea6d975d23ccd97561e06b28ebffc89de9d8cdfa6a7f31c7"
+    },
+    "consumo_material.csv": {
+      "rows": 480,
+      "sha256": "f6de61653848fc26b8231afba96eecfc20e4377c69ee0d13e164e8aca008e0dc"
+    },
+    "custos_produto.csv": {
+      "rows": 120,
+      "sha256": "df4dc22de6af928a5770655b04f320d5dbfcc15a3400db8463e02e3e0dcebfd2"
+    },
+    "estoque_mensal.csv": {
+      "rows": 144,
+      "sha256": "0ec8aab10d3bf6371332cdd7abb056b64bc18c4af0dda6e50e9d6f7e7b229650"
+    },
+    "falhas_maquina.csv": {
+      "rows": 3,
+      "sha256": "66bb5d573da5e4ab8c8b241f7c5c960b0c145f84f1ebfc30d8011132a85e2eef"
+    },
+    "fornecedores.csv": {
+      "rows": 2,
+      "sha256": "905af6b2d660f4d6edcb780fddf84c3e98cc4f9220866608c1f1024883598d4d"
+    },
+    "inspecoes_qualidade.csv": {
+      "rows": 480,
+      "sha256": "24825b817c6ad518b79a77d691c4ae7537f2cc04161847f6bff30f5ea28f7f36"
+    },
+    "itens_pedido.csv": {
+      "rows": 480,
+      "sha256": "17e6802acbf8b0ec0b3296c1cb5abf52719b3286846f1ed7df7bc2b767a56622"
+    },
+    "leituras_sensores_diarias.csv": {
+      "rows": 1566,
+      "sha256": "7c2dc4af22457feb5007c15eaf3008fdc0c7e20694977782bc47a1ec9b12db8b"
+    },
+    "lotes_material.csv": {
+      "rows": 62,
+      "sha256": "fa97c287f0770ee043cbca661b4b1ada1eff09fec05ebc5aed4b748958262ebd"
+    },
+    "ordens_manutencao.csv": {
+      "rows": 3,
+      "sha256": "60a29d34f4d9a144d4875e489e532dde865d97d438cba435d2dbdc4f98981507"
+    },
+    "ordens_producao.csv": {
+      "rows": 480,
+      "sha256": "26a774ea2334a98d138658ce88d2faa9c00ed2027c9c379bb55234e31a198ea1"
+    },
+    "pedidos.csv": {
+      "rows": 480,
+      "sha256": "e6dd527c29102e62efa2f3f6ae05e69210b46a6e0a8c89dece4e2e7af04ccd8f"
+    },
+    "produtos.csv": {
+      "rows": 6,
+      "sha256": "7d4f614d747eaba9578aef704da53699f5fa7b15c56a75c89bb76f5c0a28ddfd"
+    }
+  }
+}

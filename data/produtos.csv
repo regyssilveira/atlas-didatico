@@ -1,0 +1,7 @@
+produto_id,descricao,familia_id,tipo_produto,unidade_medida,tempo_padrao_minuto,preco_referencia
+AX-100,Produto fictício AX-100,AX,acabado,PC,3.2,890.0
+AX-110,Produto fictício AX-110,AX,acabado,PC,3.8,1040.0
+AX-120,Produto fictício AX-120,AX,acabado,PC,5.4,1390.0
+AX-130,Produto fictício AX-130,AX,acabado,PC,4.6,1210.0
+BZ-200,Produto fictício BZ-200,BZ,acabado,PC,2.9,730.0
+CMP-047,Produto fictício CMP-047,COMP,componente,PC,0.0,42.0
