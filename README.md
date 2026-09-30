@@ -33,6 +33,12 @@ Para executar as consultas locais de validação, instale o [DuckDB](https://duc
 duckdb < sql/validacoes.sql
 ```
 
+## Executar no Databricks
+
+A pasta [`databricks/`](databricks/) contém quatro notebooks em formato de fonte: preparação do ambiente, reconhecimento dos dados, investigação de produção e qualidade e passagem da análise à decisão. Clone este repositório como uma Git folder no workspace e execute os notebooks na ordem numérica.
+
+O [`roteiro de execução e captura`](docs/databricks/roteiro-execucao-captura.md) orienta a configuração e define as seis imagens previstas para o livro.
+
 ## Escopo do caso
 
 - família central `AX`, com os produtos `AX-100`, `AX-110`, `AX-120` e `AX-130`;
