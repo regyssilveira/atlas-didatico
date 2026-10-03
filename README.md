@@ -16,28 +16,27 @@ Página do livro: <https://livros.regys.com.br/dos-dados-a-decisao>
 
 O arquivo `manifest.json` registra a versão, a semente, a contagem de linhas e o SHA-256 de cada CSV. A versão oficial é a que passa integralmente por `validate.py`.
 
-## Uso rápido
+## Dois percursos
 
-Requisitos: Python 3.10 ou superior. O gerador e o validador usam apenas a biblioteca padrão.
+O livro pode ser lido sem baixar o Atlas, abrir conta ou executar SQL: os resultados essenciais estão nos capítulos. Este repositório é uma referência opcional para reproduzir as análises no Databricks.
 
-```powershell
-python generate.py
-python validate.py
-```
+Para a prática do leitor, use os CSVs prontos da release `v1.0.0`. Siga o capítulo 2 e o Apêndice A: importe um CSV por tabela pela interface, use catálogo e esquema de aprendizagem autorizados e execute SQL no Databricks. Não são necessários terminal, geração de dados ou Git folder. Não sobrescreva tabelas existentes.
 
-Os CSVs são gravados em `data/`. Outra semente pode ser informada com `--seed`, mas somente `20260930` representa a edição 1.0 usada no livro.
+O livro usa `atlas_lab.dados`; substitua esse nome pelo catálogo e esquema disponíveis na sua conta, por exemplo `atlas.livro`. Identificadores, códigos, `mes` e `turno_id` devem permanecer STRING; datas completas são DATE e medidas são numéricas.
 
-Para executar as consultas locais de validação, instale o [DuckDB](https://duckdb.org/) e rode, a partir da raiz do repositório:
+Comece apenas por `pedidos.csv`. A conferência deve retornar 480 linhas, início em 2025-01-03, fim em 2026-12-24 e 240 pedidos em 2026. Amplie para as demais tabelas somente depois dessa primeira resposta. As outras conferências de integridade estão no Apêndice A.
 
-```powershell
-duckdb < sql/validacoes.sql
-```
+## Manutenção editorial — não é requisito do leitor
+
+Os geradores e validadores preservados no repositório servem à manutenção editorial. Não execute esses programas nem altere a semente ou os CSVs oficiais para acompanhar o livro. O leitor utiliza somente os arquivos prontos e SQL no Databricks.
 
 ## Executar no Databricks
 
-A pasta [`databricks/`](databricks/) contém quatro notebooks em formato de fonte: preparação do ambiente, reconhecimento dos dados, investigação de produção e qualidade e passagem da análise à decisão. Clone este repositório como uma Git folder no workspace e execute os notebooks na ordem numérica.
+A prática do leitor ocorre exclusivamente em SQL no Databricks, com os CSVs prontos, conforme o capítulo 2 e o Apêndice A. Use um notebook SQL e mantenha a sessão nas sequências com visões temporárias. Se faltarem acesso ou computação, peça preparação ao administrador; a leitura autônoma continua disponível.
 
-O [`roteiro de execução e captura`](docs/databricks/roteiro-execucao-captura.md) orienta a configuração e define as seis imagens previstas para o livro.
+A pasta [`databricks/`](databricks/) preserva notebooks históricos de manutenção editorial. Não são o percurso do leitor nem requisitos para acompanhar o livro.
+
+O [`roteiro de execução e captura`](docs/databricks/roteiro-execucao-captura.md) é um documento de produção editorial, não uma etapa exigida ao leitor.
 
 ## Escopo do caso
 
@@ -71,7 +70,7 @@ O [`roteiro de execução e captura`](docs/databricks/roteiro-execucao-captura.m
 ```text
 .
 ├── data/               # CSVs congelados da versão oficial
-├── sql/                # consultas de validação em DuckDB SQL
+├── sql/                # material técnico de manutenção editorial
 ├── generate.py         # gerador determinístico
 ├── validate.py         # valida contagens, hashes e invariantes
 └── manifest.json       # identidade verificável do Atlas 1.0
