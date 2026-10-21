@@ -20,9 +20,17 @@ O arquivo `manifest.json` registra a versão, a semente, a contagem de linhas e 
 
 O livro pode ser lido sem baixar o Atlas, abrir conta ou executar SQL: os resultados essenciais estão nos capítulos. Este repositório é uma referência opcional para reproduzir as análises no Databricks.
 
-Para a prática do leitor, baixe **atlas-leitor-v1.0.2.zip** da [release v1.0.2](https://github.com/regyssilveira/atlas-didatico/releases/tag/v1.0.2) e extraia o arquivo pelo sistema operacional. Os CSVs prontos estão na pasta `data`. Siga o capítulo 2 e o Apêndice A: importe um CSV por tabela pela interface, use catálogo e esquema de aprendizagem autorizados e execute SQL no Databricks. Não são necessários terminal, geração de dados ou Git folder. Não sobrescreva tabelas existentes.
+Para a prática do leitor, baixe **atlas-leitor-v1.0.3.zip** da [release v1.0.3](https://github.com/regyssilveira/atlas-didatico/releases/tag/v1.0.3) e extraia o arquivo pelo sistema operacional. Os CSVs prontos estão na pasta `data`. Siga o capítulo 2 e o Apêndice A: importe um CSV por tabela pela interface, use catálogo e esquema de aprendizagem autorizados e execute SQL no Databricks. Não são necessários terminal, geração de dados ou Git folder. Não sobrescreva tabelas existentes.
 
-A release `v1.0.2` atualiza documentação, SQL e empacotamento, não os dados: preserva o dataset Atlas 1.0, seus 14 CSVs e o manifesto original. O pacote do leitor preserva também as quebras de linha usadas nos hashes do manifesto. Os arquivos automáticos **Source code** do GitHub podem normalizar essas quebras; para a prática, prefira o pacote nomeado acima. As tags anteriores permanecem disponíveis por rastreabilidade.
+A release `v1.0.3` acrescenta SQLs por capítulo, sem alterar os dados: preserva o dataset Atlas 1.0, seus 14 CSVs e o manifesto original. O pacote do leitor preserva também as quebras de linha usadas nos hashes do manifesto. Os arquivos automáticos **Source code** do GitHub podem normalizar essas quebras; para a prática, prefira o pacote nomeado acima. As tags anteriores permanecem disponíveis por rastreabilidade.
+
+## SQL por capítulo
+
+Abra o [guia dos SQLs por capítulo](sql/capitulos/README.md). São 68 arquivos numerados para os laboratórios dos capítulos 2 a 14, com preparação, tabelas necessárias, ordem, conferências e avisos. O capítulo 1 não contém laboratório SQL. A mesma pasta `sql/capitulos` acompanha o ZIP do leitor.
+
+Para copiar sem instalar um editor, abra na página pública a pasta do capítulo, leia o README, abra o arquivo indicado e use **Raw** para ver o texto. Cole no Editor de SQL do Databricks e execute uma etapa por vez, mantendo a consulta e o warehouse. Não concatene os arquivos nem execute todas as pastas de uma vez. O capítulo 13 exige conferir separadamente referência, duplicação, ausência e restauração.
+
+As consultas reproduzíveis correspondem aos blocos do livro. Exemplos empresariais, fragmentos e automações não preparados pelos CSVs são listados como excluídos, não convertidos em uma falsa prática pronta. `sql/validacoes.sql` continua como resumo de sete análises, não como substituto dos laboratórios.
 
 O livro usa `atlas_lab.dados`; substitua esse par pelo catálogo e esquema disponíveis na sua conta, por exemplo `atlas.livro`, em todas as consultas. Identificadores, códigos, `mes` e `turno_id` devem permanecer STRING; datas sem horário são DATE e medidas são numéricas. Em `falhas_maquina`, preserve `inicio_falha` e `fim_falha` como TIMESTAMP: converter esses campos para DATE apaga os horários. Confira os tipos no Apêndice A antes de prosseguir.
 
@@ -72,7 +80,8 @@ O [`roteiro de execução e captura`](docs/databricks/roteiro-execucao-captura.m
 ```text
 .
 ├── data/               # CSVs congelados da versão oficial
-├── sql/                # material técnico de manutenção editorial
+├── sql/capitulos/      # laboratórios do leitor, numerados por capítulo
+├── sql/validacoes.sql  # resumo de sete análises no Databricks
 ├── generate.py         # gerador determinístico
 ├── validate.py         # valida contagens, hashes e invariantes
 └── manifest.json       # identidade verificável do Atlas 1.0

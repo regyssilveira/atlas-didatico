@@ -1,0 +1,903 @@
+{
+  "scope": "Correspondência com os blocos do livro; não comprova execução real no Databricks.",
+  "chapters": [
+    {
+      "chapter": 2,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-02-databricks-sem-complicacao.md",
+      "files": [
+        "capitulo-02/01-consulta-bloco-01.sql",
+        "capitulo-02/02-consulta-bloco-02.sql",
+        "capitulo-02/03-consulta-bloco-03.sql",
+        "capitulo-02/04-preparacao-bloco-06.sql"
+      ],
+      "excluded": [
+        {
+          "block": 4,
+          "heading": "SQL: formular uma pergunta para os dados",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 5,
+          "heading": "Investigue os dados: antes de confiar na primeira tabela",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-03-os-primeiros-dados-da-atlas.md",
+      "files": [
+        "capitulo-03/01-preparacao-bloco-03.sql",
+        "capitulo-03/02-consulta-bloco-04.sql",
+        "capitulo-03/03-consulta-bloco-05.sql",
+        "capitulo-03/04-consulta-bloco-06.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "Granularidade: o que uma linha representa",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 2,
+          "heading": "A primeira aterrissagem da Atlas",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 7,
+          "heading": "Investigue os dados: o produto desaparecido",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-04-quando-os-dados-nao-sao-confiaveis.md",
+      "files": [
+        "capitulo-04/01-preparacao-bloco-03.sql",
+        "capitulo-04/02-consulta-bloco-04.sql",
+        "capitulo-04/03-consulta-bloco-05.sql",
+        "capitulo-04/04-consulta-bloco-06.sql",
+        "capitulo-04/05-consulta-bloco-07.sql",
+        "capitulo-04/06-consulta-bloco-08.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "Zero, nulo e ausência de registro",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 2,
+          "heading": "Validade precisa de contexto",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 9,
+          "heading": "Investigue os dados: onde o valor se multiplicou?",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 10,
+          "heading": "Investigue os dados: onde o valor se multiplicou?",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
+      "files": [
+        "capitulo-05/01-preparacao-bloco-04.sql",
+        "capitulo-05/02-consulta-bloco-05.sql",
+        "capitulo-05/03-consulta-bloco-06.sql",
+        "capitulo-05/04-consulta-bloco-07.sql",
+        "capitulo-05/05-consulta-bloco-08.sql",
+        "capitulo-05/06-consulta-bloco-09.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "Antes do indicador, defina a diferença",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 2,
+          "heading": "Capacidade não é uma constante da placa",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 3,
+          "heading": "O primeiro corte da L03",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-06-de-onde-vem-o-refugo.md",
+      "files": [
+        "capitulo-06/01-preparacao-bloco-04.sql",
+        "capitulo-06/02-consulta-bloco-05.sql",
+        "capitulo-06/03-consulta-bloco-06.sql",
+        "capitulo-06/04-consulta-bloco-07.sql",
+        "capitulo-06/05-consulta-bloco-08.sql",
+        "capitulo-06/06-consulta-bloco-09.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "Refugo em volume e em taxa",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 2,
+          "heading": "Pareto é prioridade, não prova",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 3,
+          "heading": "Rastreabilidade: reconstruir o caminho",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-07-havia-sinais-antes-da-falha.md",
+      "files": [
+        "capitulo-07/01-preparacao-bloco-03.sql",
+        "capitulo-07/02-consulta-bloco-04.sql",
+        "capitulo-07/03-consulta-bloco-05.sql",
+        "capitulo-07/04-consulta-bloco-06.sql",
+        "capitulo-07/05-consulta-bloco-07.sql",
+        "capitulo-07/06-consulta-bloco-08.sql",
+        "capitulo-07/07-consulta-bloco-09.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "Janelas antes e depois dos eventos",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 2,
+          "heading": "MTBF e MTTR sem ilusão de precisão",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-08-como-pode-faltar-produto-com-tanto-estoque.md",
+      "files": [
+        "capitulo-08/01-preparacao-bloco-03.sql",
+        "capitulo-08/02-consulta-bloco-04.sql",
+        "capitulo-08/03-consulta-bloco-05.sql",
+        "capitulo-08/04-consulta-bloco-06.sql",
+        "capitulo-08/05-consulta-bloco-07.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "Movimento e fotografia",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 2,
+          "heading": "Da demanda independente à necessidade de componentes",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-09-o-que-os-fornecedores-estao-nos-dizendo.md",
+      "files": [
+        "capitulo-09/01-preparacao-bloco-02.sql",
+        "capitulo-09/02-consulta-bloco-03.sql",
+        "capitulo-09/03-consulta-bloco-04.sql",
+        "capitulo-09/04-consulta-bloco-05.sql",
+        "capitulo-09/05-consulta-bloco-06.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "No prazo, completo e utilizável",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "files": [
+        "capitulo-10/01-preparacao-bloco-03.sql",
+        "capitulo-10/02-consulta-bloco-04.sql",
+        "capitulo-10/03-consulta-bloco-05.sql",
+        "capitulo-10/04-consulta-bloco-06.sql",
+        "capitulo-10/05-consulta-bloco-07.sql",
+        "capitulo-10/06-consulta-bloco-08.sql",
+        "capitulo-10/07-consulta-bloco-09.sql",
+        "capitulo-10/08-consulta-bloco-10.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "Desconto não é sinônimo de perda",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 2,
+          "heading": "A pista falsa do vendedor",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-11-quando-producao-estoque-e-comercial-conversam.md",
+      "files": [
+        "capitulo-11/01-preparacao-bloco-03.sql",
+        "capitulo-11/02-preparacao-bloco-04.sql",
+        "capitulo-11/03-consulta-bloco-05.sql",
+        "capitulo-11/04-preparacao-bloco-06.sql",
+        "capitulo-11/05-consulta-bloco-07.sql",
+        "capitulo-11/06-consulta-bloco-08.sql"
+      ],
+      "excluded": [
+        {
+          "block": 1,
+          "heading": "A granularidade do compromisso",
+          "reason": [
+            "illustrative-enterprise-tables"
+          ]
+        },
+        {
+          "block": 2,
+          "heading": "Uma regra de classificação compreensível",
+          "reason": [
+            "fragment-or-setup"
+          ]
+        },
+        {
+          "block": 9,
+          "heading": "Classifique por fatores observáveis",
+          "reason": [
+            "fragment-or-setup"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-12-da-analise-ao-acompanhamento.md",
+      "files": [
+        "capitulo-12/01-consulta-bloco-01.sql"
+      ],
+      "excluded": [
+        {
+          "block": 2,
+          "heading": "Passo 4 — separe cálculo, publicação e alerta",
+          "reason": [
+            "missing-prerequisite"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "files": [
+        "capitulo-13/01-referencia.sql",
+        "capitulo-13/02-conferir-referencia.sql",
+        "capitulo-13/03-duplicacao.sql",
+        "capitulo-13/04-conferir-duplicacao.sql",
+        "capitulo-13/05-ausencia.sql",
+        "capitulo-13/06-conferir-ausencia.sql",
+        "capitulo-13/07-restauracao.sql",
+        "capitulo-13/08-conferir-restauracao.sql"
+      ],
+      "excluded": []
+    },
+    {
+      "chapter": 14,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-14-o-caso-atlas-da-pergunta-a-decisao.md",
+      "files": [
+        "capitulo-14/01-consulta-bloco-01.sql",
+        "capitulo-14/02-consulta-bloco-02.sql"
+      ],
+      "excluded": []
+    }
+  ],
+  "files": [
+    {
+      "file": "capitulo-02/01-consulta-bloco-01.sql",
+      "chapter": 2,
+      "step": 1,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-02-databricks-sem-complicacao.md",
+      "block": 1,
+      "sha256": "0148784cba61158f36cbc6f14e97dbb76a6e9c24ee5f1d945fbee3a8e9750507"
+    },
+    {
+      "file": "capitulo-02/02-consulta-bloco-02.sql",
+      "chapter": 2,
+      "step": 2,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-02-databricks-sem-complicacao.md",
+      "block": 2,
+      "sha256": "ee4b945bc0b476f54ea94e960968896a79c58c5faf05cc240dbdfe7a671836e3"
+    },
+    {
+      "file": "capitulo-02/03-consulta-bloco-03.sql",
+      "chapter": 2,
+      "step": 3,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-02-databricks-sem-complicacao.md",
+      "block": 3,
+      "sha256": "a04a5507a2fcddbd12c646379cb67ae15e95a34035a03c53df0494b44805d9d7"
+    },
+    {
+      "file": "capitulo-02/04-preparacao-bloco-06.sql",
+      "chapter": 2,
+      "step": 4,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-02-databricks-sem-complicacao.md",
+      "block": 6,
+      "sha256": "cd71dfd5ba179499799629dffd1be08d06330b993c9b723ee62cb1289a17fdbf"
+    },
+    {
+      "file": "capitulo-03/01-preparacao-bloco-03.sql",
+      "chapter": 3,
+      "step": 1,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-03-os-primeiros-dados-da-atlas.md",
+      "block": 3,
+      "sha256": "772592f9297af77483d1fd81e04ad86365fecfd3613d41b46fa9e01c8bde23f0"
+    },
+    {
+      "file": "capitulo-03/02-consulta-bloco-04.sql",
+      "chapter": 3,
+      "step": 2,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-03-os-primeiros-dados-da-atlas.md",
+      "block": 4,
+      "sha256": "6aad8db4360fefd9528843b4aaa06f99144bfdbc8c4e1adcd90039e3dade68fc"
+    },
+    {
+      "file": "capitulo-03/03-consulta-bloco-05.sql",
+      "chapter": 3,
+      "step": 3,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-03-os-primeiros-dados-da-atlas.md",
+      "block": 5,
+      "sha256": "fb0b0410f10f90ede4958aadce1a61391983fb1c7696616d742d89ab8a2938e6"
+    },
+    {
+      "file": "capitulo-03/04-consulta-bloco-06.sql",
+      "chapter": 3,
+      "step": 4,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-03-os-primeiros-dados-da-atlas.md",
+      "block": 6,
+      "sha256": "954acef10e9e0958961785ac3abecb55b16087c8d1056b9ecf7599d6caadc091"
+    },
+    {
+      "file": "capitulo-04/01-preparacao-bloco-03.sql",
+      "chapter": 4,
+      "step": 1,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-04-quando-os-dados-nao-sao-confiaveis.md",
+      "block": 3,
+      "sha256": "f8d1c9da2fbb1bd0fe9004228803ec769d0ad73d576e0b2a06b7bc4eca378e18"
+    },
+    {
+      "file": "capitulo-04/02-consulta-bloco-04.sql",
+      "chapter": 4,
+      "step": 2,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-04-quando-os-dados-nao-sao-confiaveis.md",
+      "block": 4,
+      "sha256": "22ce918dea0a26ab06eead39a81ac8548280217f5f7146e66e125c806f0a24e6"
+    },
+    {
+      "file": "capitulo-04/03-consulta-bloco-05.sql",
+      "chapter": 4,
+      "step": 3,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-04-quando-os-dados-nao-sao-confiaveis.md",
+      "block": 5,
+      "sha256": "ca365f0f3c47feb03d9d2d77c8fa38f115dea4656e59d9dcf09d600ed2f28976"
+    },
+    {
+      "file": "capitulo-04/04-consulta-bloco-06.sql",
+      "chapter": 4,
+      "step": 4,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-04-quando-os-dados-nao-sao-confiaveis.md",
+      "block": 6,
+      "sha256": "9bff736a626175b2e27626276a4c18b4cb18ea36f304371b80150e95f703ae01"
+    },
+    {
+      "file": "capitulo-04/05-consulta-bloco-07.sql",
+      "chapter": 4,
+      "step": 5,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-04-quando-os-dados-nao-sao-confiaveis.md",
+      "block": 7,
+      "sha256": "e77e2593e9c4c8f404cfc507e6c6f36d0165fb9790c823ce3bdb8719d9df523f"
+    },
+    {
+      "file": "capitulo-04/06-consulta-bloco-08.sql",
+      "chapter": 4,
+      "step": 6,
+      "bookFile": "chapters/part-01-dos-dados-a-informacao/chapter-04-quando-os-dados-nao-sao-confiaveis.md",
+      "block": 8,
+      "sha256": "b1a8d99c3859248dae4501c173f90090f00319eaacd75253812aedc54d580d71"
+    },
+    {
+      "file": "capitulo-05/01-preparacao-bloco-04.sql",
+      "chapter": 5,
+      "step": 1,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
+      "block": 4,
+      "sha256": "76e165cc8ad838d536d96b7931f298d78a5e15c16fa379008870777c4ab84896"
+    },
+    {
+      "file": "capitulo-05/02-consulta-bloco-05.sql",
+      "chapter": 5,
+      "step": 2,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
+      "block": 5,
+      "sha256": "e1269c3e0342048aaa3fd8c6e21ee2af5e908a8ba1be428604adcb6a776889d3"
+    },
+    {
+      "file": "capitulo-05/03-consulta-bloco-06.sql",
+      "chapter": 5,
+      "step": 3,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
+      "block": 6,
+      "sha256": "076c9228c5e88d1a73949cd288cfdc320c39b0f46054d134d7bff562d4373bfb"
+    },
+    {
+      "file": "capitulo-05/04-consulta-bloco-07.sql",
+      "chapter": 5,
+      "step": 4,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
+      "block": 7,
+      "sha256": "4e317dc8af8cfebc8e28fafd9342d666011965d661d04998c7745cafe43b9a5b"
+    },
+    {
+      "file": "capitulo-05/05-consulta-bloco-08.sql",
+      "chapter": 5,
+      "step": 5,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
+      "block": 8,
+      "sha256": "05740d862e4b27b0023a121142d3b65edfa566255c40ae6fd6d2dc029003083c"
+    },
+    {
+      "file": "capitulo-05/06-consulta-bloco-09.sql",
+      "chapter": 5,
+      "step": 6,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
+      "block": 9,
+      "sha256": "3faf3092234b09fd9ca440aaef8bab4fb9d5abcc87d4548473b40b05a2e4ad90"
+    },
+    {
+      "file": "capitulo-06/01-preparacao-bloco-04.sql",
+      "chapter": 6,
+      "step": 1,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-06-de-onde-vem-o-refugo.md",
+      "block": 4,
+      "sha256": "7699b316e483bc87a7fb405265284fb64d3eb4d6ef8108f4fb6302026c4853ef"
+    },
+    {
+      "file": "capitulo-06/02-consulta-bloco-05.sql",
+      "chapter": 6,
+      "step": 2,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-06-de-onde-vem-o-refugo.md",
+      "block": 5,
+      "sha256": "6168a32a6aed413f9857054b888c7fc953f32d71f193294c6bcbd80ad2f1e7fe"
+    },
+    {
+      "file": "capitulo-06/03-consulta-bloco-06.sql",
+      "chapter": 6,
+      "step": 3,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-06-de-onde-vem-o-refugo.md",
+      "block": 6,
+      "sha256": "dae5376ba8b85f11c6c777bd1329e2b27965593cdcd9260a9381c8927251f453"
+    },
+    {
+      "file": "capitulo-06/04-consulta-bloco-07.sql",
+      "chapter": 6,
+      "step": 4,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-06-de-onde-vem-o-refugo.md",
+      "block": 7,
+      "sha256": "f8e70e029aa4cd1e2ff9814c94d2cba2c5004d558b16765da9d070da2e103de4"
+    },
+    {
+      "file": "capitulo-06/05-consulta-bloco-08.sql",
+      "chapter": 6,
+      "step": 5,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-06-de-onde-vem-o-refugo.md",
+      "block": 8,
+      "sha256": "d26ae61c5a6605004016e6d76f91965f1195c5ffcfebaaafd3523258c766300c"
+    },
+    {
+      "file": "capitulo-06/06-consulta-bloco-09.sql",
+      "chapter": 6,
+      "step": 6,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-06-de-onde-vem-o-refugo.md",
+      "block": 9,
+      "sha256": "57ec4e07aad8ed381d2308cbb0131fcba0f408410a83542f5e6b4d2c9fead6cb"
+    },
+    {
+      "file": "capitulo-07/01-preparacao-bloco-03.sql",
+      "chapter": 7,
+      "step": 1,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-07-havia-sinais-antes-da-falha.md",
+      "block": 3,
+      "sha256": "7163f024be63a6492cd3eb278849298c7f37bc54a95b917939d88ba5638d2167"
+    },
+    {
+      "file": "capitulo-07/02-consulta-bloco-04.sql",
+      "chapter": 7,
+      "step": 2,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-07-havia-sinais-antes-da-falha.md",
+      "block": 4,
+      "sha256": "941831f106677d44ec766a99f35970a44845794846f87addb83327238771feda"
+    },
+    {
+      "file": "capitulo-07/03-consulta-bloco-05.sql",
+      "chapter": 7,
+      "step": 3,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-07-havia-sinais-antes-da-falha.md",
+      "block": 5,
+      "sha256": "106764069e44e7dc98e842d2149ac414fe667ff2f9ba20f70df44b37a18d924a"
+    },
+    {
+      "file": "capitulo-07/04-consulta-bloco-06.sql",
+      "chapter": 7,
+      "step": 4,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-07-havia-sinais-antes-da-falha.md",
+      "block": 6,
+      "sha256": "80e3d0862e99c84935351657fc6fa689fbbacd757bea9f4a7b6e9bdba8ab9f55"
+    },
+    {
+      "file": "capitulo-07/05-consulta-bloco-07.sql",
+      "chapter": 7,
+      "step": 5,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-07-havia-sinais-antes-da-falha.md",
+      "block": 7,
+      "sha256": "71cb9db523092f4babd96ab722b0c6337218017cc91ccd1d16383e7a4d830637"
+    },
+    {
+      "file": "capitulo-07/06-consulta-bloco-08.sql",
+      "chapter": 7,
+      "step": 6,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-07-havia-sinais-antes-da-falha.md",
+      "block": 8,
+      "sha256": "51119a9440aeb48ca55a1d9aa8b99186483a89ea22bc52d4fac7370084b98661"
+    },
+    {
+      "file": "capitulo-07/07-consulta-bloco-09.sql",
+      "chapter": 7,
+      "step": 7,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-07-havia-sinais-antes-da-falha.md",
+      "block": 9,
+      "sha256": "e78b71e719198228abf47dc4b23cf9d917f93e5b9d497aacac1cb14a3b0a7358"
+    },
+    {
+      "file": "capitulo-08/01-preparacao-bloco-03.sql",
+      "chapter": 8,
+      "step": 1,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-08-como-pode-faltar-produto-com-tanto-estoque.md",
+      "block": 3,
+      "sha256": "c31d926f18ab8f2f2f7734a7b7669756d9695e50750d4b076d3916f4664078bf"
+    },
+    {
+      "file": "capitulo-08/02-consulta-bloco-04.sql",
+      "chapter": 8,
+      "step": 2,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-08-como-pode-faltar-produto-com-tanto-estoque.md",
+      "block": 4,
+      "sha256": "d660dc0774e636ff92411c07cb78b634f06c269eac9d5db658c2569a8f5b6815"
+    },
+    {
+      "file": "capitulo-08/03-consulta-bloco-05.sql",
+      "chapter": 8,
+      "step": 3,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-08-como-pode-faltar-produto-com-tanto-estoque.md",
+      "block": 5,
+      "sha256": "e0f18246a7b7a630ada9d45434291ed5fd92a6b36d8f1aa74a1509c02f5a53e3"
+    },
+    {
+      "file": "capitulo-08/04-consulta-bloco-06.sql",
+      "chapter": 8,
+      "step": 4,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-08-como-pode-faltar-produto-com-tanto-estoque.md",
+      "block": 6,
+      "sha256": "d0ee1bad5b5ec80c112a829799cb3d36640726870dd1a40dce21fedcdb7cd69e"
+    },
+    {
+      "file": "capitulo-08/05-consulta-bloco-07.sql",
+      "chapter": 8,
+      "step": 5,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-08-como-pode-faltar-produto-com-tanto-estoque.md",
+      "block": 7,
+      "sha256": "d8e541dfbc5e08c6d1091c0639592d826dc553b50d4885afe0f412e9e5b20695"
+    },
+    {
+      "file": "capitulo-09/01-preparacao-bloco-02.sql",
+      "chapter": 9,
+      "step": 1,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-09-o-que-os-fornecedores-estao-nos-dizendo.md",
+      "block": 2,
+      "sha256": "4839f9635a6c4cce26955060a1cf3fc72fc80da301f026453a85bf7c700727bd"
+    },
+    {
+      "file": "capitulo-09/02-consulta-bloco-03.sql",
+      "chapter": 9,
+      "step": 2,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-09-o-que-os-fornecedores-estao-nos-dizendo.md",
+      "block": 3,
+      "sha256": "e2a32b80d5dd1149fd0396af22dede64132dc7a0bd53cc6150e1842102e0f242"
+    },
+    {
+      "file": "capitulo-09/03-consulta-bloco-04.sql",
+      "chapter": 9,
+      "step": 3,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-09-o-que-os-fornecedores-estao-nos-dizendo.md",
+      "block": 4,
+      "sha256": "ff17bd79da0d7f1b9b6f15173dca8af46dc6e1f6a743e03833bd6aee06a421e3"
+    },
+    {
+      "file": "capitulo-09/04-consulta-bloco-05.sql",
+      "chapter": 9,
+      "step": 4,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-09-o-que-os-fornecedores-estao-nos-dizendo.md",
+      "block": 5,
+      "sha256": "eeec81128c3ddb3846711d40a48bad231c79bf08267c9393893ecea5b2b1eb1b"
+    },
+    {
+      "file": "capitulo-09/05-consulta-bloco-06.sql",
+      "chapter": 9,
+      "step": 5,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-09-o-que-os-fornecedores-estao-nos-dizendo.md",
+      "block": 6,
+      "sha256": "d03845f4839019e94627b1e0324e6b656f5c9936d702aebe923ecfffaa2acd7d"
+    },
+    {
+      "file": "capitulo-10/01-preparacao-bloco-03.sql",
+      "chapter": 10,
+      "step": 1,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 3,
+      "sha256": "c6350742c1e52b3720bac94aa2a401101258253e37693d1b721444a1dfa959e1"
+    },
+    {
+      "file": "capitulo-10/02-consulta-bloco-04.sql",
+      "chapter": 10,
+      "step": 2,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 4,
+      "sha256": "18629ab38895c15165e20bc404c24e7a78405b244da98cdc2228e76372253c2a"
+    },
+    {
+      "file": "capitulo-10/03-consulta-bloco-05.sql",
+      "chapter": 10,
+      "step": 3,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 5,
+      "sha256": "8a2c3dac4fe2a42410085094a2ad8c4451d4be653abc409eb9ad00c46ad78fdf"
+    },
+    {
+      "file": "capitulo-10/04-consulta-bloco-06.sql",
+      "chapter": 10,
+      "step": 4,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 6,
+      "sha256": "38579b77fc460723b21494c32ff1002f2eba9e753e4a3910fa85b6ef45f8935e"
+    },
+    {
+      "file": "capitulo-10/05-consulta-bloco-07.sql",
+      "chapter": 10,
+      "step": 5,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 7,
+      "sha256": "06ad0955fea34ac7fa83fc201b0b399ed1e53b0347038b72f03f4e1b353aeb0e"
+    },
+    {
+      "file": "capitulo-10/06-consulta-bloco-08.sql",
+      "chapter": 10,
+      "step": 6,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 8,
+      "sha256": "1f19d7af4a7a66a66b5d7710f445c785bca411bafa65abe08452d33765ca7ee2"
+    },
+    {
+      "file": "capitulo-10/07-consulta-bloco-09.sql",
+      "chapter": 10,
+      "step": 7,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 9,
+      "sha256": "65e229931e9a2fb3b12d01b48ce1153721d75b30ba14d927e203114e03fa575d"
+    },
+    {
+      "file": "capitulo-10/08-consulta-bloco-10.sql",
+      "chapter": 10,
+      "step": 8,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 10,
+      "sha256": "ee17d32fd9c6dd931677e33657f276ecd8b1f82cfeb75a58eccac14126a7ac29"
+    },
+    {
+      "file": "capitulo-11/01-preparacao-bloco-03.sql",
+      "chapter": 11,
+      "step": 1,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-11-quando-producao-estoque-e-comercial-conversam.md",
+      "block": 3,
+      "sha256": "0fb3bf583052a7a17f7365dfa807f8dc06ddd8f35e1a1c40f3a866011fd6014b"
+    },
+    {
+      "file": "capitulo-11/02-preparacao-bloco-04.sql",
+      "chapter": 11,
+      "step": 2,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-11-quando-producao-estoque-e-comercial-conversam.md",
+      "block": 4,
+      "sha256": "744a5bea86c4106d10bf870abc2a87888b6f3f596bd667fad2fef27ca6d06266"
+    },
+    {
+      "file": "capitulo-11/03-consulta-bloco-05.sql",
+      "chapter": 11,
+      "step": 3,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-11-quando-producao-estoque-e-comercial-conversam.md",
+      "block": 5,
+      "sha256": "945a68f28d47f4299d95291d5de5bad5140537367a27daefe1a92d9757552fa3"
+    },
+    {
+      "file": "capitulo-11/04-preparacao-bloco-06.sql",
+      "chapter": 11,
+      "step": 4,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-11-quando-producao-estoque-e-comercial-conversam.md",
+      "block": 6,
+      "sha256": "9d85df9930321eb3d8810faf6dd7e8d8716ea04f172d5af6647c9262b15e5bcc"
+    },
+    {
+      "file": "capitulo-11/05-consulta-bloco-07.sql",
+      "chapter": 11,
+      "step": 5,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-11-quando-producao-estoque-e-comercial-conversam.md",
+      "block": 7,
+      "sha256": "e517a31ca832a4eb27704daa855c5c5f8facf703b82b5d2b5617b904004c4ae6"
+    },
+    {
+      "file": "capitulo-11/06-consulta-bloco-08.sql",
+      "chapter": 11,
+      "step": 6,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-11-quando-producao-estoque-e-comercial-conversam.md",
+      "block": 8,
+      "sha256": "b42ba1d78a2e8f1612524a50c6459a6a78fb5053f6d8a8bd3d554db3fb4ec404"
+    },
+    {
+      "file": "capitulo-12/01-consulta-bloco-01.sql",
+      "chapter": 12,
+      "step": 1,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-12-da-analise-ao-acompanhamento.md",
+      "block": 1,
+      "sha256": "48927f72f0ff5e5ff6900f7e836a45e3f417d92612fedb2d0bcdba1238f7a36d"
+    },
+    {
+      "file": "capitulo-13/01-referencia.sql",
+      "chapter": 13,
+      "step": 1,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "block": 1,
+      "sha256": "4eaafcef7c474bba570fdb10c6bd70e27f199b9f8fe1aa266368073abff7468d"
+    },
+    {
+      "file": "capitulo-13/02-conferir-referencia.sql",
+      "chapter": 13,
+      "step": 2,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "block": 2,
+      "sha256": "c017d3a9cd5ea85324502d6c00ab7bda4c8da1886b36738dae6eb94873aca6f3"
+    },
+    {
+      "file": "capitulo-13/03-duplicacao.sql",
+      "chapter": 13,
+      "step": 3,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "block": 3,
+      "sha256": "0bf0c0d78e8539ae9ccef0ecf3c20fec44faaa6f00e008f7f0ebf67b0258dcda"
+    },
+    {
+      "file": "capitulo-13/04-conferir-duplicacao.sql",
+      "chapter": 13,
+      "step": 4,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "block": 2,
+      "sha256": "c017d3a9cd5ea85324502d6c00ab7bda4c8da1886b36738dae6eb94873aca6f3"
+    },
+    {
+      "file": "capitulo-13/05-ausencia.sql",
+      "chapter": 13,
+      "step": 5,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "block": 4,
+      "sha256": "305751d2f6fdb329e69e874eb99459a62bd2ec4054529a397247b5c7ba64351e"
+    },
+    {
+      "file": "capitulo-13/06-conferir-ausencia.sql",
+      "chapter": 13,
+      "step": 6,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "block": 2,
+      "sha256": "c017d3a9cd5ea85324502d6c00ab7bda4c8da1886b36738dae6eb94873aca6f3"
+    },
+    {
+      "file": "capitulo-13/07-restauracao.sql",
+      "chapter": 13,
+      "step": 7,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "block": 5,
+      "sha256": "3d124c414f97cecb9db253738817c4eef4eb9625c63436b3d8738841d4f536c3"
+    },
+    {
+      "file": "capitulo-13/08-conferir-restauracao.sql",
+      "chapter": 13,
+      "step": 8,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-13-ia-quando-os-dados-comecam-a-trabalhar-por-voce.md",
+      "block": 2,
+      "sha256": "c017d3a9cd5ea85324502d6c00ab7bda4c8da1886b36738dae6eb94873aca6f3"
+    },
+    {
+      "file": "capitulo-14/01-consulta-bloco-01.sql",
+      "chapter": 14,
+      "step": 1,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-14-o-caso-atlas-da-pergunta-a-decisao.md",
+      "block": 1,
+      "sha256": "1ef2dc87cba68b025bc3bf3677a46663bc091e22725ef1dd468de48edd05ed6e"
+    },
+    {
+      "file": "capitulo-14/02-consulta-bloco-02.sql",
+      "chapter": 14,
+      "step": 2,
+      "bookFile": "chapters/part-03-da-informacao-a-decisao/chapter-14-o-caso-atlas-da-pergunta-a-decisao.md",
+      "block": 2,
+      "sha256": "d37a94a6e9b3b0b4e0f07b5601540fc788e9e89665b3f370f1436658a6272788"
+    }
+  ]
+}
