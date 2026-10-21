@@ -20,9 +20,9 @@ O arquivo `manifest.json` registra a versão, a semente, a contagem de linhas e 
 
 O livro pode ser lido sem baixar o Atlas, abrir conta ou executar SQL: os resultados essenciais estão nos capítulos. Este repositório é uma referência opcional para reproduzir as análises no Databricks.
 
-Para a prática do leitor, baixe **Source code (zip)** da [release v1.0.1](https://github.com/regyssilveira/atlas-didatico/releases/tag/v1.0.1) e extraia o arquivo pelo sistema operacional. Os CSVs prontos estão na pasta `data`. Siga o capítulo 2 e o Apêndice A: importe um CSV por tabela pela interface, use catálogo e esquema de aprendizagem autorizados e execute SQL no Databricks. Não são necessários terminal, geração de dados ou Git folder. Não sobrescreva tabelas existentes.
+Para a prática do leitor, baixe **atlas-leitor-v1.0.2.zip** da [release v1.0.2](https://github.com/regyssilveira/atlas-didatico/releases/tag/v1.0.2) e extraia o arquivo pelo sistema operacional. Os CSVs prontos estão na pasta `data`. Siga o capítulo 2 e o Apêndice A: importe um CSV por tabela pela interface, use catálogo e esquema de aprendizagem autorizados e execute SQL no Databricks. Não são necessários terminal, geração de dados ou Git folder. Não sobrescreva tabelas existentes.
 
-A release `v1.0.1` atualiza documentação e SQL, não os dados: preserva o dataset Atlas 1.0, seus 14 CSVs e o manifesto da release anterior. Use esta release, não as instruções históricas de `v1.0.0`.
+A release `v1.0.2` atualiza documentação, SQL e empacotamento, não os dados: preserva o dataset Atlas 1.0, seus 14 CSVs e o manifesto original. O pacote do leitor preserva também as quebras de linha usadas nos hashes do manifesto. Os arquivos automáticos **Source code** do GitHub podem normalizar essas quebras; para a prática, prefira o pacote nomeado acima. As tags anteriores permanecem disponíveis por rastreabilidade.
 
 O livro usa `atlas_lab.dados`; substitua esse par pelo catálogo e esquema disponíveis na sua conta, por exemplo `atlas.livro`, em todas as consultas. Identificadores, códigos, `mes` e `turno_id` devem permanecer STRING; datas sem horário são DATE e medidas são numéricas. Em `falhas_maquina`, preserve `inicio_falha` e `fim_falha` como TIMESTAMP: converter esses campos para DATE apaga os horários. Confira os tipos no Apêndice A antes de prosseguir.
 
