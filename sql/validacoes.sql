@@ -1,15 +1,18 @@
--- Atlas 1.0 — consultas de validação em DuckDB
--- Execute a partir de examples/atlas_1_0.
+-- Atlas 1.0 — consultas de validação em Databricks SQL
+-- Importe os CSVs em atlas_lab.dados conforme o Apêndice A.
+-- Use o mesmo objeto de consulta e warehouse no Editor de SQL.
+-- Se a sessão for perdida, reexecute a preparação abaixo.
+-- Substitua atlas_lab.dados pelo seu catálogo e esquema autorizados.
 
-CREATE OR REPLACE VIEW pedidos AS SELECT * FROM read_csv_auto('data/pedidos.csv');
-CREATE OR REPLACE VIEW itens AS SELECT * FROM read_csv_auto('data/itens_pedido.csv');
-CREATE OR REPLACE VIEW ordens AS SELECT * FROM read_csv_auto('data/ordens_producao.csv');
-CREATE OR REPLACE VIEW apontamentos AS SELECT * FROM read_csv_auto('data/apontamentos_producao.csv');
-CREATE OR REPLACE VIEW lotes AS SELECT * FROM read_csv_auto('data/lotes_material.csv');
-CREATE OR REPLACE VIEW inspecoes AS SELECT * FROM read_csv_auto('data/inspecoes_qualidade.csv');
-CREATE OR REPLACE VIEW estoque AS SELECT * FROM read_csv_auto('data/estoque_mensal.csv');
-CREATE OR REPLACE VIEW sensores AS SELECT * FROM read_csv_auto('data/leituras_sensores_diarias.csv');
-CREATE OR REPLACE VIEW custos AS SELECT * FROM read_csv_auto('data/custos_produto.csv');
+CREATE OR REPLACE TEMP VIEW pedidos AS SELECT * FROM atlas_lab.dados.pedidos;
+CREATE OR REPLACE TEMP VIEW itens AS SELECT * FROM atlas_lab.dados.itens_pedido;
+CREATE OR REPLACE TEMP VIEW ordens AS SELECT * FROM atlas_lab.dados.ordens_producao;
+CREATE OR REPLACE TEMP VIEW apontamentos AS SELECT * FROM atlas_lab.dados.apontamentos_producao;
+CREATE OR REPLACE TEMP VIEW lotes AS SELECT * FROM atlas_lab.dados.lotes_material;
+CREATE OR REPLACE TEMP VIEW inspecoes AS SELECT * FROM atlas_lab.dados.inspecoes_qualidade;
+CREATE OR REPLACE TEMP VIEW estoque AS SELECT * FROM atlas_lab.dados.estoque_mensal;
+CREATE OR REPLACE TEMP VIEW sensores AS SELECT * FROM atlas_lab.dados.leituras_sensores_diarias;
+CREATE OR REPLACE TEMP VIEW custos AS SELECT * FROM atlas_lab.dados.custos_produto;
 
 -- 1. Demanda: a família AX cresce, mas de maneira desigual entre produtos.
 SELECT year(p.data_pedido) AS ano, i.produto_id, sum(i.quantidade) AS unidades
@@ -61,7 +64,7 @@ SELECT year(p.data_pedido) AS ano,
 FROM pedidos p
 JOIN itens i USING (pedido_id)
 JOIN custos c ON c.produto_id = i.produto_id
-             AND c.mes = strftime(p.data_pedido, '%Y-%m')
+             AND c.mes = date_format(p.data_pedido, 'yyyy-MM')
 WHERE i.produto_id LIKE 'AX-%'
 GROUP BY ALL ORDER BY ano;
 
