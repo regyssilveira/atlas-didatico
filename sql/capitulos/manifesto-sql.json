@@ -111,7 +111,8 @@
         "capitulo-05/03-consulta-bloco-06.sql",
         "capitulo-05/04-consulta-bloco-07.sql",
         "capitulo-05/05-consulta-bloco-08.sql",
-        "capitulo-05/06-consulta-bloco-09.sql"
+        "capitulo-05/06-consulta-bloco-09.sql",
+        "capitulo-05/07-consulta-bloco-10.sql"
       ],
       "excluded": [
         {
@@ -259,7 +260,8 @@
         "capitulo-10/05-consulta-bloco-07.sql",
         "capitulo-10/06-consulta-bloco-08.sql",
         "capitulo-10/07-consulta-bloco-09.sql",
-        "capitulo-10/08-consulta-bloco-10.sql"
+        "capitulo-10/08-consulta-bloco-10.sql",
+        "capitulo-10/09-consulta-bloco-11.sql"
       ],
       "excluded": [
         {
@@ -513,6 +515,14 @@
       "step": 6,
       "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
       "block": 9,
+      "sha256": "6d29ff4e66deea9d9c2c9d014cabe9f4f4736550bd6bcd3088b340313d85136b"
+    },
+    {
+      "file": "capitulo-05/07-consulta-bloco-10.sql",
+      "chapter": 5,
+      "step": 7,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-05-por-que-produzimos-menos-do-que-planejamos.md",
+      "block": 10,
       "sha256": "3faf3092234b09fd9ca440aaef8bab4fb9d5abcc87d4548473b40b05a2e4ad90"
     },
     {
@@ -729,7 +739,7 @@
       "step": 4,
       "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
       "block": 6,
-      "sha256": "38579b77fc460723b21494c32ff1002f2eba9e753e4a3910fa85b6ef45f8935e"
+      "sha256": "a5e918f1042358b88291aff6c1dcc88e0aa2cfe8ff0c9e9ebc4db3f7b3376ab4"
     },
     {
       "file": "capitulo-10/05-consulta-bloco-07.sql",
@@ -737,7 +747,7 @@
       "step": 5,
       "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
       "block": 7,
-      "sha256": "06ad0955fea34ac7fa83fc201b0b399ed1e53b0347038b72f03f4e1b353aeb0e"
+      "sha256": "38579b77fc460723b21494c32ff1002f2eba9e753e4a3910fa85b6ef45f8935e"
     },
     {
       "file": "capitulo-10/06-consulta-bloco-08.sql",
@@ -745,7 +755,7 @@
       "step": 6,
       "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
       "block": 8,
-      "sha256": "1f19d7af4a7a66a66b5d7710f445c785bca411bafa65abe08452d33765ca7ee2"
+      "sha256": "06ad0955fea34ac7fa83fc201b0b399ed1e53b0347038b72f03f4e1b353aeb0e"
     },
     {
       "file": "capitulo-10/07-consulta-bloco-09.sql",
@@ -753,7 +763,7 @@
       "step": 7,
       "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
       "block": 9,
-      "sha256": "65e229931e9a2fb3b12d01b48ce1153721d75b30ba14d927e203114e03fa575d"
+      "sha256": "1f19d7af4a7a66a66b5d7710f445c785bca411bafa65abe08452d33765ca7ee2"
     },
     {
       "file": "capitulo-10/08-consulta-bloco-10.sql",
@@ -761,6 +771,14 @@
       "step": 8,
       "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
       "block": 10,
+      "sha256": "65e229931e9a2fb3b12d01b48ce1153721d75b30ba14d927e203114e03fa575d"
+    },
+    {
+      "file": "capitulo-10/09-consulta-bloco-11.sql",
+      "chapter": 10,
+      "step": 9,
+      "bookFile": "chapters/part-02-investigando-a-empresa/chapter-10-vender-mais-significa-ganhar-mais.md",
+      "block": 11,
       "sha256": "ee17d32fd9c6dd931677e33657f276ecd8b1f82cfeb75a58eccac14126a7ac29"
     },
     {

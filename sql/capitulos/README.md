@@ -23,12 +23,12 @@ O capítulo 1 não contém laboratório SQL. Nos capítulos 12 e 14, os arquivos
 | 2 | [capitulo-02](capitulo-02/README.md) | 4 |
 | 3 | [capitulo-03](capitulo-03/README.md) | 4 |
 | 4 | [capitulo-04](capitulo-04/README.md) | 6 |
-| 5 | [capitulo-05](capitulo-05/README.md) | 6 |
+| 5 | [capitulo-05](capitulo-05/README.md) | 7 |
 | 6 | [capitulo-06](capitulo-06/README.md) | 6 |
 | 7 | [capitulo-07](capitulo-07/README.md) | 7 |
 | 8 | [capitulo-08](capitulo-08/README.md) | 5 |
 | 9 | [capitulo-09](capitulo-09/README.md) | 5 |
-| 10 | [capitulo-10](capitulo-10/README.md) | 8 |
+| 10 | [capitulo-10](capitulo-10/README.md) | 9 |
 | 11 | [capitulo-11](capitulo-11/README.md) | 6 |
 | 12 | [capitulo-12](capitulo-12/README.md) | 1 |
 | 13 | [capitulo-13](capitulo-13/README.md) | 8 |

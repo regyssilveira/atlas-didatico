@@ -39,4 +39,4 @@ As únicas definições publicadas aqui são visões temporárias; nenhuma etapa
 
 As etapas 2, 4, 6 e 8 repetem exatamente os mesmos três diagnósticos, mas em estados diferentes. A etapa 3 introduz duplicação; a 5 parte da fonte intacta e introduz ausência; a 7 restaura a visão e conta a fonte. Não acumule as alterações. Sem IA, execute o mesmo teste; o painel assistido não é requisito.
 
-Para retomar, execute 01-referencia.sql e depois somente o estado desejado: 03-duplicacao.sql ou 05-ausencia.sql, seguido da conferência correspondente. Não reexecute todas as alterações anteriores. Termine por 07-restauracao.sql e 08-conferir-restauracao.sql. Para adaptar a consulta de margem, siga as três substituições explicadas no capítulo 13; o original está na etapa 4 do capítulo 10.
+Para retomar, execute 01-referencia.sql e depois somente o estado desejado: 03-duplicacao.sql ou 05-ausencia.sql, seguido da conferência correspondente. Não reexecute todas as alterações anteriores. Termine por 07-restauracao.sql e 08-conferir-restauracao.sql. Para adaptar a consulta de margem, siga as três substituições explicadas no capítulo 13; o original está na etapa 5 do capítulo 10.

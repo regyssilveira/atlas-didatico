@@ -19,17 +19,18 @@ A primeira etapa marcada como preparação cria os nomes curtos usados depois. S
 | 1 | [01-preparacao-bloco-03.sql](01-preparacao-bloco-03.sql) | Preparação / definição de visão. Acompanhe a investigação: reconciliar crescimento e margem |
 | 2 | [02-consulta-bloco-04.sql](02-consulta-bloco-04.sql) | Consulta / conferência. Confirme a granularidade econômica |
 | 3 | [03-consulta-bloco-05.sql](03-consulta-bloco-05.sql) | Consulta / conferência. Confirme a granularidade econômica |
-| 4 | [04-consulta-bloco-06.sql](04-consulta-bloco-06.sql) | Consulta / conferência. Calcule receita e margem com a mesma população |
-| 5 | [05-consulta-bloco-07.sql](05-consulta-bloco-07.sql) | Consulta / conferência. Localize desconto, custo e mix |
+| 4 | [04-consulta-bloco-06.sql](04-consulta-bloco-06.sql) | Consulta / conferência. Confirme custo único por produto e mês |
+| 5 | [05-consulta-bloco-07.sql](05-consulta-bloco-07.sql) | Consulta / conferência. Calcule receita e margem com a mesma população |
 | 6 | [06-consulta-bloco-08.sql](06-consulta-bloco-08.sql) | Consulta / conferência. Localize desconto, custo e mix |
-| 7 | [07-consulta-bloco-09.sql](07-consulta-bloco-09.sql) | Consulta / conferência. Teste a acusação contra o vendedor |
+| 7 | [07-consulta-bloco-09.sql](07-consulta-bloco-09.sql) | Consulta / conferência. Localize desconto, custo e mix |
 | 8 | [08-consulta-bloco-10.sql](08-consulta-bloco-10.sql) | Consulta / conferência. Teste a acusação contra o vendedor |
+| 9 | [09-consulta-bloco-11.sql](09-consulta-bloco-11.sql) | Consulta / conferência. Teste a acusação contra o vendedor |
 
 Execute o próximo arquivo somente depois de conferir o anterior. Não concatene os arquivos para rodar tudo de uma vez.
 
 ## Conferência e limites
 
-AX: receita aproximada de R$ 8,04 milhões para R$ 8,93 milhões e margem percentual de 28,16% para 24,25%. Confirme custo único por produto/mês e ausência de itens sem custo antes de somar.
+Antes da margem: a etapa 3 deve mostrar 480 itens, 480 com custo e zero sem custo, sem aumentar o total anterior à junção. A etapa 4 verifica custo único por produto/mês: nenhuma linha deve retornar. Qualquer par repetido bloqueia a margem; investigue sem escolher ou fazer média de custos arbitrariamente. Depois de aprovadas as conferências, a etapa 5 calcula AX: receita aproximada de R$ 8,04 milhões para R$ 8,93 milhões e margem percentual de 28,16% para 24,25%.
 
 Compare as demais saídas com os quadros e comentários da seção correspondente no livro. Uma divergência pede conferir carga, tipos, versão, prefixos e ordem; não altere o SQL só para forçar o resultado.
 

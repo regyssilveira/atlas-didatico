@@ -6,7 +6,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
-VERSION = "v1.0.3"
+VERSION = "v1.0.4"
 output = ROOT / f"dist/atlas-leitor-{VERSION}.zip"
 output.parent.mkdir(exist_ok=True)
 

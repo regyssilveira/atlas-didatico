@@ -22,12 +22,13 @@ A primeira etapa marcada como preparação cria os nomes curtos usados depois. S
 | 4 | [04-consulta-bloco-07.sql](04-consulta-bloco-07.sql) | Consulta / conferência. A distância anual e sua decomposição |
 | 5 | [05-consulta-bloco-08.sql](05-consulta-bloco-08.sql) | Consulta / conferência. Peças por hora e o efeito do mix |
 | 6 | [06-consulta-bloco-09.sql](06-consulta-bloco-09.sql) | Consulta / conferência. Peças por hora e o efeito do mix |
+| 7 | [07-consulta-bloco-10.sql](07-consulta-bloco-10.sql) | Consulta / conferência. Peças por hora e o efeito do mix |
 
 Execute o próximo arquivo somente depois de conferir o anterior. Não concatene os arquivos para rodar tudo de uma vez.
 
 ## Conferência e limites
 
-AX em 2025: 7.358 planejadas, 7.060 produzidas e 6.984 aprovadas. Em 2026: 8.331, 7.787 e 7.613. Compare turno dentro do mesmo produto antes de interpretar produtividade.
+AX em 2025: 7.358 planejadas, 7.060 produzidas e 6.984 aprovadas. Em 2026: 8.331, 7.787 e 7.613. A etapa 6 compara turnos por produto: AX-120 tem 11,11 / 10,62 / 10,74 peças por hora para T1 / T2 / T3; AX-130 tem 12,64 / 12,50 / 12,72. A saída organiza produto e turno nas linhas, não em colunas como o quadro do livro.
 
 Compare as demais saídas com os quadros e comentários da seção correspondente no livro. Uma divergência pede conferir carga, tipos, versão, prefixos e ordem; não altere o SQL só para forçar o resultado.
 

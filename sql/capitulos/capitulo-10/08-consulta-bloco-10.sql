@@ -6,17 +6,11 @@
 -- Confira o resultado e os limites do capítulo antes de avançar.
 -- INÍCIO DO SQL DO LIVRO
 SELECT
-    CASE WHEN p.vendedor_id = 'VEN-027' THEN 'VEN-027'
+    CASE WHEN vendedor_id = 'VEN-027' THEN 'VEN-027'
          ELSE 'demais' END AS grupo,
-    CASE WHEN i.produto_id LIKE 'AX-%' THEN 'AX'
-         ELSE 'outras' END AS familia,
-    round(100.0 * avg(
-        (p.data_entrega > p.data_prometida_original)::INTEGER
-    ), 1)
+    round(100.0 * avg((data_entrega > data_prometida_original)::INTEGER), 1)
         AS atraso_pct,
     count(*) AS pedidos
-FROM pedidos p
-JOIN itens i USING (pedido_id)
-GROUP BY grupo, familia
-ORDER BY grupo, familia;
+FROM pedidos
+GROUP BY grupo;
 -- FIM DO SQL DO LIVRO

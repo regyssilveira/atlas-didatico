@@ -6,20 +6,20 @@
 -- Confira o resultado e os limites do capítulo antes de avançar.
 -- INÍCIO DO SQL DO LIVRO
 SELECT
-    mes,
-    produto_id,
-    unidades,
-    round(100.0 * unidades / sum(unidades) OVER (PARTITION BY mes), 1)
-        AS participacao_pct
-FROM (
-    SELECT
-        date_format(p.data_pedido, 'yyyy-MM') AS mes,
-        i.produto_id,
-        sum(i.quantidade) AS unidades
-    FROM pedidos p
-    JOIN itens i USING (pedido_id)
-    WHERE i.produto_id LIKE 'AX-%'
-    GROUP BY mes, i.produto_id
-)
-ORDER BY mes, produto_id;
+    date_format(p.data_pedido, 'yyyy-MM') AS mes,
+    i.produto_id,
+    sum(i.quantidade) AS unidades,
+    round(100.0 * (1 - sum(i.quantidade * i.preco_venda)
+        / sum(i.quantidade * i.preco_lista)), 2) AS desconto_ponderado_pct,
+    round(avg(c.custo_total), 2) AS custo_unitario,
+    round(100.0 * sum(i.quantidade * (i.preco_venda - c.custo_total))
+        / sum(i.quantidade * i.preco_venda), 2) AS margem_pct
+FROM pedidos p
+JOIN itens i USING (pedido_id)
+JOIN custos c
+  ON c.produto_id = i.produto_id
+ AND c.mes = date_format(p.data_pedido, 'yyyy-MM')
+WHERE i.produto_id LIKE 'AX-%'
+GROUP BY date_format(p.data_pedido, 'yyyy-MM'), i.produto_id
+ORDER BY mes, i.produto_id;
 -- FIM DO SQL DO LIVRO
